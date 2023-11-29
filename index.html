@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="logo">Weather🌥</div>
+    <div class="container">
+      <div class="weatherApp max-width">
+        <div class="search">
+          <div class="input-btn-container">
+            <input id="userInput" type="text" placeholder="Enter city name" />
+            <button type="submit" class="searchBtn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="loader-container active">
+            <div class="loader"></div>
+          </div>
+          
+
+          <div class="error">
+            <p>Invalid city name</p>
+          </div>
+
+          <div class="fetch-data">
+            <div class="time-c-f">
+              <div class="time-date">2021-5-24 15:22</div>
+              <!-- toggle between c and f -->
+              <!-- <div class="c-f">
+                <button class="celsiusBtn">C°</button>
+                &vert;
+                <button class="fahrenheitBtn">F°</button>
+              </div> -->
+            </div>
+            <div class="city-state">
+              <div>
+                
+              </div>
+              <div class="name">Riga,</div>
+              &nbsp;
+              <div class="city">Latvia</div>
+
+              
+            </div>
+            <!-- <div class="now">Now</div> -->
+            <div class="icon-deg">
+              <div class="icon"><img class="imgTest" src="" alt="" /></div>
+             
+                <div class="temp">0°C</div>
+                
+              
+
+              <div class="feels-like">
+                <p>Feels like</p>
+                &nbsp;
+                <div class="feelsLike">-4</div>
+              </div>
+
+              <div class="condition">Rainy</div>
+            </div>
+
+            <div class="otherStats">
+              <div class="humidity-container">
+                <div class="humidity">50%</div>
+                <p>Humidity</p>
+              </div>
+
+              <div class="wind-container">
+                <div class="wind">15km/h</div>
+                <p>Wind</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
